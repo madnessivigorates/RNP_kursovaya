@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BAE3FA"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="1000px"
+        android:paddingTop="0px">
+        <Button
+            android:id="@+id/button_info"
+            android:layout_width="102dp"
+            android:layout_height="100dp"
+            android:layout_gravity="right"
+            android:background="#00FFFFFF"
+            android:foreground="?android:attr/actionModeFindDrawable"
+            android:onClick="onClick" />
+
+        <TextView
+            android:id="@+id/informa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:paddingBottom="560px"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/player_choice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:paddingBottom="180px"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/computer_choice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:paddingBottom="95px"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:paddingBottom="0px"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="780px"
+        android:paddingTop="0px">
+
+        <Button
+            android:id="@+id/button_rock"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_gravity="bottom|left"
+            android:background="#00FFFFFF"
+            android:foreground="?android:attr/actionModeSelectAllDrawable" />
+
+        <Button
+            android:id="@+id/button_paper"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_gravity="bottom|center"
+            android:background="#00FFFFFF"
+            android:foreground="?android:attr/actionModeCopyDrawable" />
+
+        <Button
+            android:id="@+id/button_scissors"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_gravity="bottom|right"
+            android:background="#00FFFFFF"
+            android:foreground="?android:attr/actionModeCutDrawable" />
+    </FrameLayout>
+
+</LinearLayout>
